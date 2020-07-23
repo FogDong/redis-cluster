@@ -4,7 +4,7 @@ h=`hostname`
 # Copy appropriate conf.d files from config-map to emptyDir.
 # ordinal 0 is the first host
 mkdir -p /usr/local/etc/redis
-if [ ! -f "$myFile" ]; then
+if [ ! -f "/usr/local/etc/redis/redis.conf" ]; then
    touch /usr/local/etc/redis/redis.conf
 fi
 
